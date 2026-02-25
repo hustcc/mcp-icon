@@ -167,30 +167,6 @@ tests/
 └── server.test.ts    # MCP server integration tests
 ```
 
-### Icon API
-
-Icons are served by the [AntV Infographic](https://infographic.antv.vision/icon) icon service:
-
-```
-GET https://www.weavefox.cn/api/open/v1/icon?text={keyword}&topK={n}
-```
-
-**Response:**
-
-```json
-{
-  "status": true,
-  "message": "success",
-  "data": {
-    "success": true,
-    "data": [
-      "https://example.com/icon1.svg",
-      "https://example.com/icon2.svg"
-    ]
-  }
-}
-```
-
 ---
 
 ## 📄 License
