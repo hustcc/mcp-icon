@@ -12,5 +12,13 @@
     "declaration": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", "**/*.test.ts"]
+  "exclude": ["node_modules", "build", "**/*.test.ts"],
+  "tsc-alias": {
+    "verbose": false,
+    "resolveFullPaths": true,
+    "fileExtensions": {
+      "inputGlob": "{js,jsx,mjs}",
+      "outputCheck": ["js", "json", "jsx", "mjs"]
+    }
+  }
 }

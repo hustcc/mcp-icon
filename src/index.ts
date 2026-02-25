@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { parseArgs } from "node:util";
-import { logger } from "./utils/logger.js";
-import { runSSEServer, runStdioServer, runStreamableServer } from "./server.js";
+import { logger } from "./utils/logger";
+import { runSSEServer, runStdioServer, runStreamableServer } from "./server";
 
 const { values } = parseArgs({
   options: {

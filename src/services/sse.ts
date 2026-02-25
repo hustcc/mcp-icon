@@ -1,7 +1,7 @@
 import type { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 import express, { type Request, type Response } from "express";
-import { logger } from "../utils/logger.js";
+import { logger } from "../utils/logger";
 
 export async function startSSEServer(
   createServer: () => Server,

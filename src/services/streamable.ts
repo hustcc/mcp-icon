@@ -2,7 +2,7 @@ import type { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import cors from "cors";
 import express, { type Request, type Response } from "express";
-import { logger } from "../utils/logger.js";
+import { logger } from "../utils/logger";
 
 export async function startStreamableServer(
   createServer: () => Server,

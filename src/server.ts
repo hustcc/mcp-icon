@@ -5,14 +5,14 @@ import {
   ListToolsRequestSchema,
   McpError,
 } from "@modelcontextprotocol/sdk/types.js";
-import { searchIconsTool } from "./tools/search-icons.js";
-import { searchIcons } from "./utils/api.js";
-import { logger } from "./utils/logger.js";
+import { searchIconsTool } from "./tools/search-icons";
+import { searchIcons } from "./utils/api";
+import { logger } from "./utils/logger";
 import {
   startSSEServer,
   startStdioServer,
   startStreamableServer,
-} from "./services/index.js";
+} from "./services/index";
 
 export { startSSEServer, startStdioServer, startStreamableServer };
 
