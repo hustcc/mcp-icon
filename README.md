@@ -7,7 +7,7 @@
 Generate infographic SVG icons by keyword — over **100,000 icons** with semantic search support, powered by [AntV Infographic](https://infographic.antv.vision/icon).
 
 [![npm version](https://img.shields.io/npm/v/mcp-icon.svg)](https://www.npmjs.com/package/mcp-icon)
-[![CI](https://github.com/hustcc/mcp-icon/actions/workflows/ci.yml/badge.svg)](https://github.com/hustcc/mcp-icon/actions/workflows/ci.yml)
+[![Build](https://github.com/hustcc/mcp-icon/actions/workflows/build.yml/badge.svg)](https://github.com/hustcc/mcp-icon/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 </div>
