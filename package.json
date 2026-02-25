@@ -1,0 +1,47 @@
+{
+  "name": "mcp-icon",
+  "description": "A Model Context Protocol server for semantic icon search. Generate infographic SVG icons by keyword, with over 100,000 icons and semantic search support.",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "prebuild": "rm -rf build/*",
+    "build": "tsc",
+    "postbuild": "chmod +x build/index.js",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "bin": {
+    "mcp-icon": "./build/index.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "files": ["build"],
+  "keywords": ["antv", "mcp", "icon", "svg", "search", "infographic"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hustcc/mcp-icon"
+  },
+  "author": {
+    "name": "hustcc"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^3.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  }
+}
