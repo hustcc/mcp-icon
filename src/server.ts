@@ -33,7 +33,7 @@ export function createServer(): Server {
       throw new McpError(ErrorCode.MethodNotFound, `Unknown tool: ${name}`);
     }
 
-    const { keyword, topK = 5 } = args as { keyword?: string; topK?: number };
+    const { keyword, topK = 3 } = args as { keyword?: string; topK?: number };
 
     if (!keyword || typeof keyword !== "string") {
       throw new McpError(
@@ -50,12 +50,10 @@ export function createServer(): Server {
       const { urls } = await searchIcons(keyword, clampedTopK);
 
       return {
-        content: [
-          {
-            type: "text",
-            text: urls.join("\n"),
-          },
-        ],
+        content: urls.map((url) => ({
+          type: "text" as const,
+          text: url,
+        })),
         _meta: {
           description:
             "SVG icon URLs matching the search keyword. Each URL points to an SVG file that can be embedded using an <img> tag or rendered inline.",

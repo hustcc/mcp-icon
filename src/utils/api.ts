@@ -7,11 +7,11 @@ export interface IconSearchResult {
 /**
  * Search for icons by keyword using the Infographic icon API.
  * @param text - The search keyword (e.g. "data analysis")
- * @param topK - Number of icons to return (1-20, default 5)
+ * @param topK - Number of icons to return (1-20, default 3)
  */
 export async function searchIcons(
   text: string,
-  topK: number = 5
+  topK: number = 3
 ): Promise<IconSearchResult> {
   const url = `${ICON_API_BASE}?text=${encodeURIComponent(text)}&topK=${topK}`;
 

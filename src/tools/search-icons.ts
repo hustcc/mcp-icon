@@ -15,8 +15,8 @@ export const searchIconsTool: Tool = {
       topK: {
         type: "number",
         description:
-          "The number of icons to return. Must be between 1 and 20. Defaults to 5.",
-        default: 5,
+          "The number of icons to return. Must be between 1 and 20. Defaults to 3.",
+        default: 3,
         minimum: 1,
         maximum: 20,
       },
