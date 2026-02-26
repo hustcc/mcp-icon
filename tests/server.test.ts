@@ -52,8 +52,8 @@ describe("MCP server", () => {
     });
 
     expect(result.isError).toBeFalsy();
-    expect(result.content).toHaveLength(1);
-    expect((result.content[0] as { text: string }).text).toContain(
+    expect(result.content).toHaveLength(mockUrls.length);
+    expect((result.content[0] as { text: string }).text).toBe(
       "https://example.com/icon1.svg"
     );
   });

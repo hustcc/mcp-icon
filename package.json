@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "build/index.js",
   "scripts": {
+    "start": "npx @modelcontextprotocol/inspector node build/index.js",
     "prebuild": "rm -rf build/*",
     "build": "tsc && tsc-alias -p tsconfig.json",
     "postbuild": "chmod +x build/index.js",

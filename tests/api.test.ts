@@ -44,7 +44,7 @@ describe("searchIcons", () => {
     expect(calledUrl).toContain("topK=3");
   });
 
-  it("uses default topK of 5 when not provided", async () => {
+  it("uses default topK of 3 when not provided", async () => {
     vi.mocked(fetch).mockResolvedValueOnce({
       ok: true,
       json: async () => ({
@@ -56,7 +56,7 @@ describe("searchIcons", () => {
 
     await searchIcons("security");
     const calledUrl = vi.mocked(fetch).mock.calls[0][0] as string;
-    expect(calledUrl).toContain("topK=5");
+    expect(calledUrl).toContain("topK=3");
   });
 
   it("throws on non-ok HTTP response", async () => {
