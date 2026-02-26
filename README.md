@@ -44,7 +44,7 @@ Generate infographic SVG icons by keyword — over **100,000 icons** with semant
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
 | `keyword` | string | ✅ | — | Search keyword or phrase (e.g. `"data analysis"`, `"cloud"`) |
-| `topK` | number | ❌ | `5` | Number of icons to return (1–20) |
+| `topK` | number | ❌ | `3` | Number of icons to return (1–20) |
 
 ---
 
@@ -143,8 +143,8 @@ npm run build
 # Run tests
 npm test
 
-# Start in stdio mode (for development with MCP inspector)
-node build/index.js
+# Start with MCP inspector (for local debugging)
+npm start
 ```
 
 ### Project Structure
